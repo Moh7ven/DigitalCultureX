@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../assets/css/loader.css" />
+    <link rel="stylesheet" href="../assets/css/connexion.css" />
+  </head>
+  <body>
+    <section class="firstContainer" role="formulaire">
+      <div id="loader" class="spinner center">
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+      </div>
+
+      <div class="container">
+        <div class="heading">Inscription</div>
+        <form action="" class="form">
+          <input
+            class="input"
+            type="text"
+            name="nom"
+            id="nom"
+            placeholder="Nom"
+          />
+          <input
+            class="input"
+            type="text"
+            name="prenom"
+            id="prenom"
+            placeholder="prenom"
+          />
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <input
+            class="input"
+            type="password"
+            id="confPassword"
+            placeholder="Comfirmer votre mot de passe"
+          />
+          <span class="no-compte"
+            >Vous avez pas déjà un compte ?
+            <a href="./connexion.html">Connectez-vous</a></span
+          >
+          <input class="login-button" type="submit" value="Se connecter" />
+        </form>
+        <span class="message"></span>
+      </div>
+    </section>
+    <script src="../assets/js/session.js"></script>
+    <script src="../assets/js/inscription.js"></script>
+  </body>
+</html>

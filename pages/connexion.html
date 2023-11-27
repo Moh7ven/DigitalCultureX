@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../assets/css/loader.css" />
+    <link rel="stylesheet" href="../assets/css/connexion.css" />
+  </head>
+  <body>
+    <section class="firstContainer" role="formulaire">
+      <div id="loader" class="spinner center">
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+        <div class="spinner-blade"></div>
+      </div>
+
+      <div class="container">
+        <div class="heading">Connexion</div>
+        <form action="" class="form">
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Mot de passe"
+          />
+          <span class="no-compte"
+            >Vous n'avez pas encore de compte ?
+            <a href="./inscription.html">Inscrivez-vous</a></span
+          >
+          <input class="login-button" type="submit" value="Se connecter" />
+        </form>
+        <span class="message"></span>
+      </div>
+    </section>
+    <script src="../assets/js/session.js"></script>
+    <script src="../assets/js/connexion.js"></script>
+  </body>
+</html>
