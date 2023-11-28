@@ -36,13 +36,16 @@ async function logIn() {
     try {
       document.querySelector("#loader").style.display = "block";
 
-      const response = await fetch("http://localhost:3000/api/user/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://digitalculturex.onrender.com/api/user/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       console.log(response);
       if (response.ok) {
@@ -56,7 +59,7 @@ async function logIn() {
         console.log(responseData);
 
         setTimeout(() => {
-          document.querySelector("#loader").style.display = "none";
+          // document.querySelector("#loader").style.display = "none";
           window.location.href = "./acceuil.html";
         }, 3000);
       } else {

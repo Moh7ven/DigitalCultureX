@@ -64,13 +64,16 @@ async function register() {
     try {
       document.querySelector("#loader").style.display = "block";
 
-      const response = await fetch("http://localhost:3000/api/user/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://digitalculturex.onrender.com/api/user/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
       if (response.ok) {
         message.style.color = "green";
         message.textContent = "Félicitation, vous avez bien été enregistré !";
