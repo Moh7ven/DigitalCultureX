@@ -29,6 +29,18 @@ body {
   box-shadow: rgba(133, 189, 215, 0.8784313725) 10px 30px 30px -20px;
 }
 
+.return {
+  width: 70px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(16, 137, 211);
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow:  5px 7px 30px rgba(133, 189, 215, 0.8784313725);
+}
+
 .heading {
   text-align: center;
   font-weight: 900;
